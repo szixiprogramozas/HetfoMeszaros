@@ -12,3 +12,10 @@ C:\Users\mesza\source\repos\HetfoMeszaros\fogas\obj\Debug\fogas.csproj.CoreCompi
 C:\Users\mesza\source\repos\HetfoMeszaros\fogas\obj\Debug\fogas.exe
 C:\Users\mesza\source\repos\HetfoMeszaros\fogas\obj\Debug\fogas.pdb
 C:\Users\mesza\source\repos\HetfoMeszaros\fogas\obj\Debug\fogas.csprojAssemblyReference.cache
+C:\Users\kiggy\Source\Repos\HetfoMeszaros\fogas\bin\Debug\fogas.exe.config
+C:\Users\kiggy\Source\Repos\HetfoMeszaros\fogas\bin\Debug\fogas.exe
+C:\Users\kiggy\Source\Repos\HetfoMeszaros\fogas\bin\Debug\fogas.pdb
+C:\Users\kiggy\Source\Repos\HetfoMeszaros\fogas\obj\Debug\fogas.csprojAssemblyReference.cache
+C:\Users\kiggy\Source\Repos\HetfoMeszaros\fogas\obj\Debug\fogas.csproj.CoreCompileInputs.cache
+C:\Users\kiggy\Source\Repos\HetfoMeszaros\fogas\obj\Debug\fogas.exe
+C:\Users\kiggy\Source\Repos\HetfoMeszaros\fogas\obj\Debug\fogas.pdb

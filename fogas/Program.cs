@@ -88,7 +88,36 @@ namespace fogas
 
         static void negyedikfeladat()
         {
+            int eredmenyestag = 0;
+            for (int i = 0; i < sorokszama; i++)
+			{
+                for (int j = 2; j < oszlop; j++)
+			    {
+                    if (halak[j, i] != "0")
+	                {
+                        eredmenyestag++;
+	                }
+			    }
+			}
+            Console.WriteLine("Eredményes tagok száma: " + eredmenyestag);
+        }
 
+        static void otodikfeladat()
+        {
+            HashSet<int> januar = new HashSet<int>();
+            for (int i = 0; i < sorokszama; i++)
+			{
+                datum[i] = datum[i].Substring(0,2);
+                if (datum[i] == "01")
+	            {
+                    januar.Add(jegyzek[i]);
+                    //Console.WriteLine(jegyzek[i]);
+	            }
+			}
+            foreach (var item in januar)
+	        {
+                Console.WriteLine(item);
+	        }
         }
     }
 }
