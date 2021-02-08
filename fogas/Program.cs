@@ -13,48 +13,46 @@ namespace fogas
         static string[] datum;
         static string[,] halak;
         static string[] halfajok;
+        static int sorokszama;
+        static int oszlop;
 
         static void Main(string[] args)
         {
             
             Console.WriteLine("Beolvasás:");
-            beolvasa();
+            beolvasas();
             masodikfeladat();
 
             Console.ReadKey();
         }
 
-        static void beolvasa()
+        static void beolvasas()
         {
             StreamReader be = new StreamReader(@"E:\naplo.txt");
-            int sorokszama = File.ReadLines(@"E:\naplo.txt").Count();
+            sorokszama = File.ReadLines(@"E:\naplo.txt").Count();
             string sor = " ";
             int index = 0;
             jegyzek = new int[sorokszama];
             datum = new string[sorokszama];
+            oszlop = 13;
+            halak = new string[oszlop, sorokszama];
 
             while ((sor = be.ReadLine())!= null)
             {
                 string[] temp = sor.Split(' ');
                 jegyzek[index] = Convert.ToInt32(temp[0]);
                 datum[index] = temp[1];
+                for (int i = 2; i < oszlop; i++)
+                {
+                    halak[i, index] = temp[i];
+                }
                 index++;
             }
-            be.Close();
-            for (int i = 0; i < 100; i++)
-            {
-                Console.Write(jegyzek[i] + " " + datum[i] + "\n");
-            }
-        }
+            be.Close();        }
 
         static void masodikfeladat()
         {
             halfajok = new string[] { "Ponty", "Csuka", "Süllő", "Harcsa", "Balin", "Angolna", "Pisztráng", "Márna", "Kecsege", "Amúr" };
-            for (int i = 0; i < halfajok.Length; i++)
-            {
-                Console.WriteLine(halfajok[i]);
-            }
-            
         }
     }
 }
