@@ -54,5 +54,15 @@ namespace fogas
         {
             halfajok = new string[] { "Ponty", "Csuka", "Süllő", "Harcsa", "Balin", "Angolna", "Pisztráng", "Márna", "Kecsege", "Amúr" };
         }
+
+        static void harmadikfeladat()
+        {
+
+        }
+
+        static void negyedikfeladat()
+        {
+
+        }
     }
 }
