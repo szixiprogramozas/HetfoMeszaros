@@ -19,11 +19,18 @@ namespace fogas
         static void Main(string[] args)
         {
             
-            Console.WriteLine("Beolvasás:");
             beolvasas();
+
+            Console.WriteLine("Második feladat: ");
             masodikfeladat();
+
+            Console.WriteLine("Harmadik feladat: ");
             harmadikfeladat();
+
+            Console.WriteLine("Negyedik feladat: ");
             negyedikfeladat();
+
+            Console.WriteLine("Ötödik feladat: ");
             otodikfeladat();
             //hatodikfeladat();
             //hetedikfeladat();
@@ -58,7 +65,13 @@ namespace fogas
 
         static void masodikfeladat()
         {
-            halfajok = new string[] { "Ponty", "Csuka", "Süllő", "Harcsa", "Balin", "Angolna", "Pisztráng", "Márna", "Kecsege", "Amúr" };
+            halfajok = new string[] { "Ponty", "Csuka", "Sullo", "Harcsa", "Balin", "Angolna", "Pisztrang", "Marna", "Kecsege", "Amur" };
+
+            for (int i = 0; i < halfajok.Length; i++)
+            {
+                Console.WriteLine(halfajok[i]);
+            }
+            Console.WriteLine(" ");
         }
 
         static void harmadikfeladat()
@@ -84,6 +97,7 @@ namespace fogas
                 Console.WriteLine("Nem számot adott meg!");
                 
             }
+            Console.WriteLine(" ");
         }
 
         static void negyedikfeladat()
@@ -100,6 +114,7 @@ namespace fogas
 			    }
 			}
             Console.WriteLine("Eredményes tagok száma: " + eredmenyestag);
+            Console.WriteLine(" ");
         }
 
         static void otodikfeladat()
@@ -110,14 +125,14 @@ namespace fogas
                 datum[i] = datum[i].Substring(0,2);
                 if (datum[i] == "01")
 	            {
-                    januar.Add(jegyzek[i]);
-                    //Console.WriteLine(jegyzek[i]);
+                    januar.Add(i+1);
 	            }
 			}
             foreach (var item in januar)
 	        {
                 Console.WriteLine(item);
 	        }
+            Console.WriteLine(" ");
         }
     }
 }
