@@ -29,8 +29,8 @@ namespace fogas
 
         static void beolvasas()
         {
-            StreamReader be = new StreamReader(@"E:\naplo.txt");
-            sorokszama = File.ReadLines(@"E:\naplo.txt").Count();
+            StreamReader be = new StreamReader(@"naplo.txt");
+            sorokszama = File.ReadLines(@"naplo.txt").Count();
             string sor = " ";
             int index = 0;
             jegyzek = new int[sorokszama];
