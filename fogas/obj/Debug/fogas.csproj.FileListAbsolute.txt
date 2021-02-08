@@ -1,0 +1,7 @@
+C:\Users\mesza\source\repos\fogas\fogas\bin\Debug\fogas.exe.config
+C:\Users\mesza\source\repos\fogas\fogas\bin\Debug\fogas.exe
+C:\Users\mesza\source\repos\fogas\fogas\bin\Debug\fogas.pdb
+C:\Users\mesza\source\repos\fogas\fogas\obj\Debug\fogas.csprojAssemblyReference.cache
+C:\Users\mesza\source\repos\fogas\fogas\obj\Debug\fogas.csproj.CoreCompileInputs.cache
+C:\Users\mesza\source\repos\fogas\fogas\obj\Debug\fogas.exe
+C:\Users\mesza\source\repos\fogas\fogas\obj\Debug\fogas.pdb
