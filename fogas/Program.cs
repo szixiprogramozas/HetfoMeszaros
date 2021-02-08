@@ -22,6 +22,7 @@ namespace fogas
             Console.WriteLine("Beolvasás:");
             beolvasas();
             masodikfeladat();
+            harmadikfeladat();
 
             Console.ReadKey();
         }
@@ -57,7 +58,27 @@ namespace fogas
 
         static void harmadikfeladat()
         {
+            int kereses = 0;
+            bool joszam;
 
+            Console.WriteLine("Adj meg egy horgászjegy számot: ");
+            joszam = int.TryParse(Console.ReadLine(), out kereses);
+            Console.WriteLine("\n" + kereses + " horgászjegyű horgász eredményes napjai: ");
+            if (joszam)
+            {
+                for (int i = 0; i < sorokszama; i++)
+                {
+                    if (kereses == jegyzek[i])
+                    {
+                        Console.WriteLine(datum[i]);
+                    }
+                }
+            }
+            else
+            {
+                Console.WriteLine("Nem számot adott meg!");
+                
+            }
         }
 
         static void negyedikfeladat()

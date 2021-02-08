@@ -11,3 +11,4 @@ C:\Users\mesza\source\repos\HetfoMeszaros\fogas\bin\Debug\fogas.pdb
 C:\Users\mesza\source\repos\HetfoMeszaros\fogas\obj\Debug\fogas.csproj.CoreCompileInputs.cache
 C:\Users\mesza\source\repos\HetfoMeszaros\fogas\obj\Debug\fogas.exe
 C:\Users\mesza\source\repos\HetfoMeszaros\fogas\obj\Debug\fogas.pdb
+C:\Users\mesza\source\repos\HetfoMeszaros\fogas\obj\Debug\fogas.csprojAssemblyReference.cache
