@@ -23,6 +23,11 @@ namespace fogas
             beolvasas();
             masodikfeladat();
             harmadikfeladat();
+            negyedikfeladat();
+            otodikfeladat();
+            //hatodikfeladat();
+            //hetedikfeladat();
+            //nyolcadikfeladat();
 
             Console.ReadKey();
         }
