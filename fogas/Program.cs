@@ -138,7 +138,20 @@ namespace fogas
 
         static void hatodikfeladat()
         {
-            
+            double legnagyobb = 0;
+            legnagyobb = halak[0, 0];
+            int index = 0;
+            for (int i = 0; i < sorokszama; i++)
+            {
+                for (int j = 2; j < oszlop; j++)
+                {
+                    if (halak[j, i] > legnagyobb)
+                    {
+                        legnagyobb = halak[j, i];
+                    }
+                }
+            }
+            Console.WriteLine(jegyzek[index] + " " + legnagyobb + "kg ");
         }
 
         static void hetedikfeladat()
