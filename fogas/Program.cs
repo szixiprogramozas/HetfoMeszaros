@@ -11,7 +11,7 @@ namespace fogas
     {
         static int[] jegyzek;
         static string[] datum;
-        static string[,] halak;
+        static double[,] halak;
         static string[] halfajok;
         static int sorokszama;
         static int oszlop;
@@ -33,9 +33,9 @@ namespace fogas
 
             Console.WriteLine("5. feladat: ");
             otodikfeladat();
-            //hatodikfeladat();
-            //hetedikfeladat();
-            //nyolcadikfeladat();
+            hatodikfeladat();
+            hetedikfeladat();
+            nyolcadikfeladat();
 
             Console.ReadKey();
         }
@@ -49,7 +49,7 @@ namespace fogas
             jegyzek = new int[sorokszama];
             datum = new string[sorokszama];
             oszlop = 13;
-            halak = new string[oszlop, sorokszama];
+            halak = new double[oszlop, sorokszama];
 
             while ((sor = be.ReadLine())!= null)
             {
@@ -58,7 +58,7 @@ namespace fogas
                 datum[index] = temp[1];
                 for (int i = 2; i < oszlop; i++)
                 {
-                    halak[i, index] = temp[i];
+                    halak[i, index] = Convert.ToDouble(temp[i].Replace('.', ','));
                 }
                 index++;
             }
@@ -108,7 +108,7 @@ namespace fogas
 			{
                 for (int j = 2; j < oszlop; j++)
 			    {
-                    if (halak[j, i] != "0")
+                    if (halak[j, i] != 0)
 	                {
                         eredmenyestag++;
 	                }
@@ -138,17 +138,17 @@ namespace fogas
 
         static void hatodikfeladat()
         {
-
+            
         }
 
         static void hetedikfeladat()
         {
-
+            
         }
 
         static void nyolcadikfeladat()
         {
-
+            
         }
 
         static void kilencedikfeladat()
