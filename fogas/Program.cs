@@ -161,7 +161,40 @@ namespace fogas
 
         static void nyolcadikfeladat()
         {
-            
+            double index = 0;
+            double legkisebb = 0;
+            legkisebb = halak[0, 0];
+            double pontyossz = 0;
+            double csukaossz = 0;
+            double sulloossz = 0;
+            double harcsaossz = 0;
+            double balinossz = 0;
+            double angolnaossz = 0;
+            double pisztrangossz = 0;
+            double marnaossz = 0;
+            double kecsegeossz = 0;
+            double amurossz = 0;
+            for (int i = 0; i < sorokszama; i++)
+            {
+                for (int j = 2; j < 3; j++)
+                {
+                    pontyossz += halak[2, i];
+                    csukaossz += halak[3, i];
+                    sulloossz += halak[4, i];
+                    harcsaossz += halak[5, i];
+                    balinossz += halak[6, i];
+                    angolnaossz += halak[7, i];
+                    pisztrangossz += halak[8, i];
+                    marnaossz += halak[9, i];
+                    kecsegeossz += halak[10, i];
+                    amurossz += halak[11, i];
+                    if (halak[j, i] < legkisebb)
+                    {
+                        legkisebb = halak[j, i];
+                    }
+                }
+            }
+            Console.WriteLine(legkisebb);
         }
 
         static void kilencedikfeladat()
