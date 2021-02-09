@@ -18,19 +18,20 @@ namespace fogas
 
         static void Main(string[] args)
         {
-            
+            Console.WriteLine("1. feladat");
             beolvasas();
+            Console.WriteLine("naplo.txt beolvasva\n");
 
-            Console.WriteLine("Második feladat: ");
+            Console.WriteLine("2. feladat: ");
             masodikfeladat();
 
-            Console.WriteLine("Harmadik feladat: ");
+            Console.WriteLine("3. feladat: ");
             harmadikfeladat();
 
-            Console.WriteLine("Negyedik feladat: ");
+            Console.WriteLine("4. feladat: ");
             negyedikfeladat();
 
-            Console.WriteLine("Ötödik feladat: ");
+            Console.WriteLine("5. feladat: ");
             otodikfeladat();
             //hatodikfeladat();
             //hetedikfeladat();
@@ -133,6 +134,26 @@ namespace fogas
                 Console.WriteLine(item);
 	        }
             Console.WriteLine(" ");
+        }
+
+        static void hatodikfeladat()
+        {
+
+        }
+
+        static void hetedikfeladat()
+        {
+
+        }
+
+        static void nyolcadikfeladat()
+        {
+
+        }
+
+        static void kilencedikfeladat()
+        {
+
         }
     }
 }
